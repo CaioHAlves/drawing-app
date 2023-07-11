@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing App</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="paint-area">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="config-area">
+      <div class="tools-wrapper">
+        <h5><span id="tool-type"></span> Size:</h5>
+        <input type="range" id="pen-slider" value="4" />
+      </div>
+      <div class="tools-wrapper">
+        <h5>Color:</h5>
+        <input type="color" id="color-input" />
+      </div>
+      <div class="tools-wrapper">
+        <h5>Background Color:</h5>
+        <input type="color" id="color-background" />
+      </div>
+      <button id="button-clear">Clear</button>
+    </div>
+
+    <!-- Script-->
+    <script src="src/index.js"></script>
+  </body>
+</html>
